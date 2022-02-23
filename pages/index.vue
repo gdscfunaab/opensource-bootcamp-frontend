@@ -1,9 +1,21 @@
 <template>
-  <Tutorial/>
+<div class="landing-page">
+  <LandingPageHeader/>
+</div>
 </template>
 
 <script>
+
 export default {
-  name: 'IndexPage'
+
+
 }
 </script>
+
+<style scoped>
+.landing-page {
+  width: 100vw;
+
+}
+
+</style>
