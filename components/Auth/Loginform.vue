@@ -8,19 +8,44 @@
             <div class="hun"><b>huntr</b></div> 
             <div class="need"><b>Need a job? Login</b> </div>
             <div class="textarea">
-                <form action="#">
-                    <input type="email" placeholder="Email Address" class="text"><br>
-                    <input type="password" name="password" id="" placeholder="Password" class="text">
+                <form action="#" @click="loginUser">
+                    <input type="email" placeholder="Email Address" class="text" v-model="form.email"><br>
+                    <input type="password" name="password" id="" placeholder="Password" class="text" v-model="form.password">
                     <br><input type="button" value="Sign In" class="button">
                 </form>
             </div>
             <div>
-                <span class="quest">Don't have an account?</span>  <nuxt-link to="#" class="sign"><span > Sign Up</span></nuxt-link>
+                <span class="quest">Don't have an account?</span>  <nuxt-link to="/register" class="sign"><span > Sign Up</span></nuxt-link>
             </div>
             </div>
         </div>
     </div>
 </template>
+<script>
+export default {
+    data(){
+        return {
+            form: {
+                email: "",
+                password: ""
+            }
+        }
+    },
+    methods: {
+    async loginUser() {
+      try {
+        await this.$fire.auth.signInWithEmailAndPassword(
+          this.form.email,
+          this.form.password
+        );
+        this.$router.push("/dashboard");
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    }
+}
+</script>
 <style scoped>
 
 body{

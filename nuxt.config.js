@@ -29,6 +29,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+  "~/assets/css/style.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -46,6 +47,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyAtrFiqaZkU1KdY0er29rXKq-2yALKKD94',
+          authDomain: 'opensource-bootcamp-frontend.firebaseapp.com',
+          projectId: 'opensource-bootcamp-frontend',
+          storageBucket: 'opensource-bootcamp-frontend.appspot.com',
+          messagingSenderId: '984125582992',
+          appId: '1:984125582992:web:d19102b652a9917d91b215',
+          measurementId: 'G-2732SBB3FT'
+        },
+        services: {
+          auth: true // Just as example. Can be any other service.
+        }
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
