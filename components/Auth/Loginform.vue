@@ -23,24 +23,34 @@
 </template>
 <style scoped>
 
+body{
+   margin: 0 !important;
+   padding: 0 !important;
+}
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
     box-sizing: border-box;
 }
 .main{
     display: flex;
     flex-direction: row;
     font-family: sans-serif;
-    
-    
-   
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
 }
 .pic{
     margin: 0px;
     padding: 0px;
-    max-width: 50%;
+    width: 50% ;
+    /* position: relative;
+    right: 20px;
+    bottom: 20px; */
+    height: 100vh;
+}
+
+.pic img{
+    width: 100%;
 }
 .center-right{
     justify-content: center;
