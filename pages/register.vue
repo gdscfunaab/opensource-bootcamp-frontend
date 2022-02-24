@@ -1,8 +1,9 @@
 <template>
-    <div class="form-image">
+<AuthRegisterForm/>
+    <!-- <div class="form-image">
         <FormimageForm/>
         <div>
-            <h1>Need a JOb? Register</h1>
+            <h1>Need a Job? Register</h1>
         </div>
        <div class="form"> <form>
             <input type="text" placeholder="Your name"><br>
@@ -18,7 +19,7 @@
         <div class="image-form">
         <FormimageImage/>
         </div>
-    </div>
+    </div> -->
 </template>
 <style scoped>
 .form{position: relative;
