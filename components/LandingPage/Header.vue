@@ -31,6 +31,8 @@
     .header-logo p {
         font-size: 20px;
         font-weight: bold;
+        font-family: monospace;
+        color:hotpink;
        
     }
 
