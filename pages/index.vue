@@ -4,6 +4,7 @@
   <LandingPageHeader/>
   <LandingPageHero/>
   <LandingPageJobcardy/>
+  <LandingPageDetail1/>
   <LandingPageDetails2 />
   <LandingPageFooter/>
 </div>
