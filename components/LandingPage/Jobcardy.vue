@@ -9,7 +9,9 @@
             <div class="time">
                 <p class="sec">2 hours ago</p>
             </div>
-            <div class="logo"></div>
+            <div class="logo">
+                <img src="../../assets/icons/Group 25.png" alt="company">
+            </div>
             <div class="company_name">
                 <p class="arm">Armada Media Ltd.</p>
             </div>
@@ -24,11 +26,11 @@
     display: grid;
     grid-template-rows: auto auto;
 }
-h1{
-font-family:monospace;
-font-size: 50px;
-}
-.armanda{
+    h1{
+        font-family:monospace;
+        font-size: 50px;
+    }
+    .armanda{
     width: 300px;
     height:400px;
     padding: 19px;
@@ -36,7 +38,7 @@ font-size: 50px;
     background-color: white;
     color: black;
     box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244) ;
-}
+    }
 h2 {
 font-family: monospace;
 font-size: 18px;
@@ -44,7 +46,7 @@ line-height: 1.5;
 }
 .first {
     position: relative;
-    top:67px;
+    top:50px;
     font-family: monospace;
     font-size: 18px;
     color: rgb(194, 192, 192);
@@ -52,7 +54,7 @@ line-height: 1.5;
 }
 .sec {
     position: relative;
-    top:30px;
+    top:5px;
     font-family: monospace;
     color: hotpink;
     font-weight: bold;
@@ -64,12 +66,11 @@ line-height: 1.5;
     font-family: monospace;
     word-spacing: -4px;
     font-size:18px;
-    line-height: 9.5;
+    position: relative;
+    top: 10px;
 }
 button {
     display: flex;
-    position: relative;
-    bottom: 80px;
     justify-content: center;
     background-color: rgb(5, 139, 1);
     padding: 15px;
