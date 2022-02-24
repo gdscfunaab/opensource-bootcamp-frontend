@@ -1,0 +1,3 @@
+<template>
+    <AuthLoginform/>
+</template>
