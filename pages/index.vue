@@ -1,5 +1,10 @@
 <template>
-  <LandingpageJobcardy/>
+  
+<div class="landing-page">
+  <LandingPageHeader/>
+  <LandingPageHero/>
+  <LandingPageJobcardy/>
+</div>
 </template>
 
 <script>
