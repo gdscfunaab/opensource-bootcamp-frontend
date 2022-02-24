@@ -1,5 +1,5 @@
 <template>
-    <h1>This is a Dashboard Page</h1>
+    <LandingpageJobcardy />
 </template>
 
 <script>
