@@ -1,7 +1,5 @@
 <template>
-<div class="landing-page">
-  <LandingPageHeader/>
-</div>
+  <LandingpageJobcardy/>
 </template>
 
 <script>
@@ -12,10 +10,5 @@ export default {
 }
 </script>
 
-<style scoped>
-.landing-page {
-  width: 100vw;
-
-}
-
+<style>
 </style>
