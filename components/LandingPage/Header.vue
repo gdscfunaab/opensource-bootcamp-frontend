@@ -5,7 +5,7 @@
         </div>
         <div class="header-links">
             <nuxt-link to="/">Get Jobs</nuxt-link>
-            <nuxt-link to="/">Post Jobs</nuxt-link>
+            <nuxt-link to="/login">Post Jobs</nuxt-link>
         </div>
         <div class="header-buttons">
             <button>Login</button>
