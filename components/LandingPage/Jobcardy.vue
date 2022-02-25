@@ -75,8 +75,13 @@
     grid-template-columns: auto auto;
     border: none;
     height:500px;
-    width:100%;
-}
+    width:100;
+    }
+    h1{
+        font-family:monospace;
+        font-size: 30px;
+        padding: 30px 50px;
+      }=======
     .job{
         border: none;
         width: 167px;
@@ -85,6 +90,7 @@
         font-size: 15px;
         margin: 0;
         padding: 0;
+   
     }
     .details-comp{
         display: grid;

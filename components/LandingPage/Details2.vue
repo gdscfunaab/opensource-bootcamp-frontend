@@ -2,7 +2,7 @@
     <div class="sections">
         <div class="section-image">
             <div class="brooke">
-                <img src="../../assets/images/brooke.png" alt="groups" width="450px" height="310px">
+                <img src="../../assets/images/brooke.png" alt="groups" >
             </div>
         </div>
         <div class="section-info">
@@ -48,6 +48,8 @@
         }
             img{
                 transform: translate(10px, 12px);
+                width:450px;
+                height:310px;
             }
     .section-info{
         display: grid;
@@ -76,5 +78,6 @@
             word-spacing: 2px;
             line-height: 1.5;
         }
+      
 
 </style>
