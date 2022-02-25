@@ -1,7 +1,7 @@
 <template>
     <div class="dashboard">
         <DashboardheaderHeader/>
-        <LandingpageJobcardy/> <p>Welcome, DeGreatIsaac</p>
+        <LandingPageJobcardy/> <p>Welcome, DeGreatIsaac</p>
     </div>
 </template>
 
