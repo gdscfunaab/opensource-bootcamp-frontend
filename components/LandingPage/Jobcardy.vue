@@ -28,7 +28,8 @@
 }
     h1{
         font-family:monospace;
-        font-size: 50px;
+        font-size: 30px;
+        padding: 30px 50px;
     }
     .armanda{
     width: 300px;

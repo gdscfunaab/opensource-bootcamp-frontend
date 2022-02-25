@@ -43,6 +43,8 @@
         display: flex;
         justify-content: space-around;
         position: relative;
+        align-items: center;
+        flex-wrap: wrap;
         padding: 20px 170px 60px 170px;
         margin: 20px;
         box-sizing: border-box;
@@ -77,6 +79,39 @@
         text-align: center;
         padding-top: 10px;
         font-size: 17px;
+    }
+    @media (max-width: 700px) {
+        .body{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            gap: 30px;
+            margin: 30px 10px;
+            padding: 20px 15px;
+          
+            box-sizing: border-box;
+        
+        }
+        .body3{
+        background-color: #fff;
+        padding:  90px 30px 80px 30px;
+        }
+        
+    }
+    @media (max-width: 1200px){
+        .body{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            gap: 30px;
+            margin: 30px 10px;
+            padding: 20px 15px;
+          
+            box-sizing: border-box;
+        
+        }
     }
 
 

@@ -3,6 +3,7 @@
 <div class="landing-page">
   <LandingPageHeader/>
   <LandingPageHero/>
+  <LandingPageSearch/>
   <LandingPageJobcardy/>
   <LandingPageDetail1/>
   <LandingPageDetails2 />
