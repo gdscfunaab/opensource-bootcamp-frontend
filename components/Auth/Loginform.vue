@@ -8,10 +8,10 @@
             <div class="hun"> <p><nuxt-link to="/"><b>huntr</b></nuxt-link></p></div> 
             <div class="need"><b>Need a job? Login</b> </div>
             <div class="textarea">
-                <form action="#" @click="loginUser">
+                <form @submit.prevent="loginUser">
                     <input type="email" placeholder="Email Address" class="text" v-model="form.email"><br>
                     <input type="password" name="password" id="" placeholder="Password" class="text" v-model="form.password">
-                    <br><input type="button" value="Sign In" class="button">
+                    <br><button class="button">Login</button>
                 </form>
             </div>
             <div>
@@ -33,14 +33,18 @@ export default {
     },
     methods: {
     async loginUser() {
+        this.$toast.info('Logging in...')
       try {
-        await this.$fire.auth.signInWithEmailAndPassword(
+       const response =  await this.$fire.auth.signInWithEmailAndPassword(
           this.form.email,
           this.form.password
         );
+        this.$toast.success('Logged in!')
         this.$router.push("/dashboard");
+        console.log(response)
+        this.$store.dispatch("onAuthStateChangedAction", {authUser: response.user})
       } catch (error) {
-        console.log(error)
+       this.$toast.error(error.message)
       }
     }
     }

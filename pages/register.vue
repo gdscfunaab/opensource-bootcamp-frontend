@@ -21,6 +21,11 @@
         </div>
     </div> -->
 </template>
+<script>
+export default {
+     middleware: ["auth"],
+}
+</script>
 <style scoped>
 .form{position: relative;
 left: 55%;

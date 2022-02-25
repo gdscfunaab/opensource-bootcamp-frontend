@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    middleware: ["auth"],
     
 }
 // let x=form.name;
