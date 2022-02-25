@@ -33,4 +33,16 @@ export const actions = {
       ctx.commit("ON_AUTH_STATE_CHANGED_MUTATION", { authUser });
     }
   },
+  getJobsAction({ commit }, payload) {
+    return new Promise((resolve, reject) => {
+      this.$axios
+        .$get("https://remotive.io/api/remote-jobs?limit=20")
+        .then(response => {
+          resolve(response);
+        })
+        .catch(error => {
+          reject(error);
+        });
+    });
+  },
 };
