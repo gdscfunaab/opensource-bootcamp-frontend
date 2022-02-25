@@ -8,7 +8,7 @@
         <div class="hun"> <p><nuxt-link to="/"><b>huntr</b></nuxt-link></p></div>
         <div class="need"><b>Need a job? Register</b></div>
         <div class="textarea">
-          <form @click="createUser">
+          <form @submit.prevent="createUser">
             <input
               type="name"
               placeholder="Your Name"
@@ -29,7 +29,7 @@
               class="text"
               v-model="form.password"
             />
-            <br /><input type="button" value="Sign In" class="button" />
+            <br /><button value="Sign In" class="button" >Sign Up</button>
           </form>
         </div>
         <div>
@@ -54,6 +54,7 @@ export default {
   },
   methods: {
     async createUser() {
+      this.$toast.info('Creating your account...')
       try {
         await this.$fire.auth.createUserWithEmailAndPassword(
           this.form.email,
@@ -61,8 +62,9 @@ export default {
           this.form.name
         );
          this.$router.push("/login");
+         this.$toast.success("Account created successfully, kindly login")
       } catch (error) {
-       console.log(error)
+        this.$toast.error(error.message)
       }
     },
   },

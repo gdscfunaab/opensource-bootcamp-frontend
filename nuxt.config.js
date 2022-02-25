@@ -47,6 +47,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/toast',
     [
       '@nuxtjs/firebase',
       {
@@ -61,10 +62,21 @@ export default {
         },
         services: {
           auth: true // Just as example. Can be any other service.
-        }
-      }
+        },
+        
+      },
+      
     ]
   ],
+  toast: {
+    position: "bottom-center",
+    duration: 2000,
+    theme: "bubble",
+    singleton: true,
+    register: [
+      // Register custom toasts
+    ],
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

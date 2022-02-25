@@ -4,10 +4,28 @@
             <p><nuxt-link to="/">huntr</nuxt-link></p>
         </div>
         <div class="header-buttons">
-            <button><nuxt-link to="/login">Log out</nuxt-link></button>
+            <button @click="logOut">Log out</button>
         </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            user: null,
+        };
+    },
+    methods: {
+        logOut() {
+            this.$toast.info('Logging in...')
+            this.$store.dispatch("onAuthStateChangedAction", {authUser: {}})
+            this.$router.push("/");
+            this.$toast.info('Logout successful')
+    
+    },
+    }
+}
+</script>
 <style scoped>
 .header {
     display: flex;
