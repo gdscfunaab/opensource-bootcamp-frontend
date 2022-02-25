@@ -8,8 +8,8 @@
             <nuxt-link to="/">Post Jobs</nuxt-link>
         </div>
         <div class="header-buttons">
-            <button>Login</button>
-            <button>Sign Up</button>
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
         </div>
     </div>
 </template>
@@ -21,16 +21,19 @@
     justify-content: space-between;
     margin: 2em 4em;
 }
+
     .header-logo {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 1rem;
       
     }
 
     .header-logo p {
-        font-size: 20px;
+        font-size: 1.4rem;
         font-weight: bold;
+        color: rgb(241, 62, 173);
        
     }
 
@@ -40,10 +43,14 @@
         align-items: center;
        
     }
+   
 
     .header-links a {
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: bold;
+        padding: 1rem;
+        text-decoration: none;
+        color: rgb(70, 69, 69);
         
     }
 
@@ -51,69 +58,45 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-right: 6rem;
+        
         
     }
 
     .header-buttons button {
-        font-size: 14px;
-        font-weight: bold;
-        color: #000;
-        border: none;
-        background-color: #fff;
-        padding: 0 10px;
         border-radius: 5px;
+        padding: 0.65rem 1rem;
+        font-size: 1rem;
+        max-width: 8rem;
+        margin: 1.2rem;
+        border: none;
+    }
+    .login{
+        background-color: white;
+        color: rgb(241, 62, 173);
+    }
+    .signup{
+        background-color: rgb(241, 62, 173);
+        color: white;
     }
 
-    .header-logo p {
-        font-size: 20px;
-        font-weight: bold;
-        color: #000;
-    }
 
-    .header-links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
      
-    }
-
-   
-    .header-buttons {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-       
-    }
-
-    .header-buttons button {
-        font-size: 14px;
-        font-weight: bold;
-        color: #000;
-        border: none;
-        background-color: #fff;
-        padding: 0 10px;
-        border-radius: 5px;
-    }
 
     @media screen and  (min-width: 768px) {
-        .header {
-            margin: 2em 0;
-        }
-        .header-buttons {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-           
-        }
-        .header-buttons button {
-            font-size: 14px;
-            font-weight: bold;
-            color: #000;
-            border: none;
-            background-color: #fff;
-            padding: 0 10px;
-            border-radius: 5px;
-        }
-        
+    .header {
+    margin: 1em 2em;
+}
+
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+      
     }
+
+    
+        
+    } 
 </style>
