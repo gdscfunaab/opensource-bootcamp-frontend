@@ -1,10 +1,10 @@
 <template>
-       <div class="header">
+    <div class="header">
         <div class="header-logo">
-            <p>huntr</p>
+            <p><nuxt-link to="/">huntr</nuxt-link></p>
         </div>
         <div class="header-buttons">
-            <button>Log out</button>
+            <button><nuxt-link to="/login">Log out</nuxt-link></button>
         </div>
     </div>
 </template>
@@ -13,7 +13,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 1em 2em;
+    margin: 1em 2em 5em 2em;
 }
     .header-logo {
         display: flex;
@@ -22,26 +22,32 @@
       
     }
 
-    .header-logo p {
-        font-size: 36px;
+    .header-logo a {
+        font-size: 27px;
         font-weight: bold;
-        color:rgb(242,97,180);
+        color:hotpink;
         font-family: sans-serif;
+        
        
     }
     
     .header-buttons button {
         font-size: 14px;
         font-weight: bold;
-        color: #fff;
+       
         border: none;
-        background-color: rgb(242,97,180);
+        background-color: hotpink;
         padding: 0 10px;
         border-radius: 4px;
         position: relative;
         right: 55px;
         height: 50px;
-        top: 40px;
+     
+    }
+    a{
+        text-decoration: none;
+         color: #fff;
+         padding: 10px;
     }
 
 </style>

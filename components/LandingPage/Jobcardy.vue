@@ -81,14 +81,14 @@
         font-family:monospace;
         font-size: 30px;
         padding: 30px 50px;
-      }=======
+      }
     .job{
         border: none;
-        width: 167px;
+        width: 200px;
         height: 70px;
         font-family: monospace;
         font-size: 15px;
-        margin: 0;
+        margin: 0 0 20px 0;
         padding: 0;
    
     }
@@ -98,7 +98,7 @@
         border: none;
         height: 400px;
         width: 72rem;
-        margin-top: 85px;
+        margin-top: 100px;
     }
     .first-grid{
     display: grid;

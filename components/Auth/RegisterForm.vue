@@ -5,7 +5,7 @@
     </div>
     <div class="center-right">
       <div class="right">
-        <div class="hun"><b>huntr</b></div>
+        <div class="hun"> <p><nuxt-link to="/"><b>huntr</b></nuxt-link></p></div>
         <div class="need"><b>Need a job? Register</b></div>
         <div class="textarea">
           <form @click="createUser">
@@ -111,11 +111,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hun {
-  margin: 20px;
-  color: rgb(250, 76, 198);
-  font-size: 27px;
+.hun{
+    margin: 20px;
 }
+.hun a{
+    
+    color: hotpink;
+    font-size: 27px;
+    text-decoration: none;
+
+}
+
 .need {
   font-size: 18px;
   color: rgb(110, 109, 109);

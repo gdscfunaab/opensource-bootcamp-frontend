@@ -34,7 +34,7 @@
     width: 100%;
     height: 650px;
     margin: 0 auto;
-    box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244);
+    /* box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244); */
 }
     .section-image{
         width: 30rem;

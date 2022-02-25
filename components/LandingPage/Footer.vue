@@ -44,8 +44,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto ;
     grid-gap: 15px;
-    border: 1px solid red;
-    margin: 200px 0px 70px 50px;
+    margin: 20px 0px 70px 50px;
     font-family: sans-serif;
 
 }
