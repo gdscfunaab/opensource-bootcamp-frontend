@@ -33,6 +33,8 @@ img{
 div.master{
 display: flex;
 flex-direction: row-reverse;
+background-image: url('../../assets/images/Mask Group 2.png');
+background-repeat: no-repeat;
 }
 h2.getstarted {
     color: rgb(241, 62, 173);
@@ -87,7 +89,11 @@ div.details{
     h2.getstarted{
         margin-top: 1.5rem;
     }
+    
 
+}
+*{
+    font-family: sans-serif;
 }
 </style>>
 
