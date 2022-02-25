@@ -1,15 +1,15 @@
 <template>
     <div class="header">
         <div class="header-logo">
-            <p>Huntr</p>
+            <p><nuxt-link to="/">huntr</nuxt-link></p>
         </div>
         <div class="header-links">
             <nuxt-link to="/">Get Jobs</nuxt-link>
             <nuxt-link to="/login">Post Jobs</nuxt-link>
         </div>
         <div class="header-buttons">
-            <button class="login">Login</button>
-            <button class="signup">Sign Up</button>
+            <button class="login"><nuxt-link to="/login">Login</nuxt-link></button>
+            <button class="signup"><nuxt-link to="/register">Sign Up</nuxt-link></button>
         </div>
     </div>
 </template>
@@ -19,7 +19,19 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 2em 4em;
+    margin: 0 4em;
+    position:absolute;
+    top: 0;
+    animation-name: head;
+    animation-duration: 1.5s;
+    transform-origin: right;
+    transition-timing-function: ease;
+
+}
+@keyframes head{
+    from{transform: rotate(-40deg);}
+    to {transform: rotateZ(0deg);}
+
 }
 
     .header-logo {
@@ -30,10 +42,11 @@
       
     }
 
-    .header-logo p {
-        font-size: 1.4rem;
+    .header-logo a {
+        font-size: 1.6rem;
         font-weight: bold;
-        color: rgb(241, 62, 173);
+        color: hotpink;
+        text-decoration: none;
        
     }
 
@@ -73,11 +86,21 @@
     }
     .login{
         background-color: white;
-        color: rgb(241, 62, 173);
+        color: hotpink;
     }
     .signup{
-        background-color: rgb(241, 62, 173);
-        color: white;
+        background-color: hotpink;
+       
+    }
+    .signup a{
+        text-decoration: none;
+         color: white;   
+         font-size: small;
+    }
+    .login a{
+        text-decoration: none;
+        color: hotpink;
+         font-size: small;
     }
 
 

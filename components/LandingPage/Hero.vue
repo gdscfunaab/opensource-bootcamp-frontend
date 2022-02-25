@@ -37,7 +37,7 @@ background-image: url('../../assets/images/Mask Group 2.png');
 background-repeat: no-repeat;
 }
 h2.getstarted {
-    color: rgb(241, 62, 173);
+    color: hotpink;
     margin-top: 15rem;
 
 }
@@ -47,13 +47,14 @@ h2.getstarted {
 h2 {
     font-family: sans-serif;
     font-size: 1.5rem;
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 1rem 0;
     
 }
 
 p{
-    font-size: 1.25em; 
+    font-size: 1em; 
     max-width: 70%;
+    line-height: 30px;
     
 
 }

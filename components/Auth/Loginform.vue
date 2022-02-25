@@ -5,7 +5,7 @@
         </div>
         <div class="center-right" >
             <div class="right">
-            <div class="hun"><b>huntr</b></div> 
+            <div class="hun"> <p><nuxt-link to="/"><b>huntr</b></nuxt-link></p></div> 
             <div class="need"><b>Need a job? Login</b> </div>
             <div class="textarea">
                 <form action="#" @click="loginUser">
@@ -93,8 +93,12 @@ body{
 }
 .hun{
     margin: 20px;
-    color: rgb(250, 76, 198);
+}
+.hun a{
+    
+    color: hotpink;
     font-size: 27px;
+    text-decoration: none;
 
 }
 .need{

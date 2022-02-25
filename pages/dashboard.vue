@@ -1,7 +1,9 @@
 <template>
     <div class="dashboard">
         <DashboardheaderHeader/>
-        <LandingPageJobcardy/> <p>Welcome, DeGreatIsaac</p>
+        <p><b>Welcome, FrontEnd Devs</b></p>
+        <LandingPageJobcardy/> 
+
     </div>
 </template>
 
@@ -9,15 +11,17 @@
 export default {
     
 }
+// let x=form.name;
+// document.getElementById("username").innerHTML = x;
 </script>
 
 <style scoped>
 p{
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(13, 85, 55);
+    color: rgb(67, 189, 138);
     position: relative;
     left: 30px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 </style>
