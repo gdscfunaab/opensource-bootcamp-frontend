@@ -20,9 +20,9 @@
             }}
           </p>
         </div>
-        <div class="logo">
+        <!-- <div class="logo">
           <img :src="job.company_logo" alt="company" />
-        </div>
+        </div> -->
         <div class="company_name">
           <p>{{ job.company_name }}</p>
         </div>
@@ -50,7 +50,7 @@ export default {
 <style scoped>
 .over {
   box-sizing: border-box;
-  display: grid;
+  /* display: grid; */
   grid-template-columns: auto auto auto;
   border: none;
   height: 500px;
@@ -63,7 +63,7 @@ h1 {
 }
 .job {
   border: none;
-  width: 200px;
+  /* width: 200px; */
   height: 70px;
   font-family: monospace;
   font-size: 15px;
