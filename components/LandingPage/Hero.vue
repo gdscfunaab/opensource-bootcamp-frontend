@@ -45,7 +45,7 @@ h2.getstarted {
     font-size: 3rem;
 }
 h2 {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
     padding: 0 0 1rem 0;
     
@@ -55,6 +55,7 @@ p{
     font-size: 1em; 
     max-width: 70%;
     line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 
 }

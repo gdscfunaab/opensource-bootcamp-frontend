@@ -60,12 +60,14 @@ export default {
         position: relative;
         right: 55px;
         height: 50px;
+        cursor: pointer;
      
     }
     a{
         text-decoration: none;
          color: #fff;
          padding: 10px;
+
     }
 
 </style>

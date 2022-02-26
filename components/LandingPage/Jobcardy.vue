@@ -27,8 +27,8 @@
           <p>{{ job.company_name }}</p>
         </div>
         <div class="descrip-apply">
-          <nuxt-link to="/login" v-if="isLandingPage">Apply Now</nuxt-link>
-          <a target="_blank" :href="job.url" v-else>Apply Now</a>
+        <button> <nuxt-link to="/login" v-if="isLandingPage">Apply Now</nuxt-link>
+          <a target="_blank" :href="job.url" v-else>Apply Now</a></button>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@ export default {
 .over {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   border: none;
   height: 500px;
   width: 100;
@@ -146,11 +146,16 @@ h1 {
 button {
   width: 300px;
   height: 45px;
-  font-family: monospace;
-  font-size: 15px;
-  color: white;
   background-color: rgb(13, 187, 7);
   border: none;
   box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244);
+  margin-top: 90px;
+}
+button a{
+  text-decoration: none;
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 100px;
 }
 </style>
