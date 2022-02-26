@@ -20,9 +20,9 @@
             }}
           </p>
         </div>
-        <!-- <div class="logo">
-          <img :src="job.company_logo" alt="company" />
-        </div> -->
+        <div class="logo">
+          <img :src="job.company_logo" alt="company" width="50px"/>
+        </div> 
         <div class="company_name">
           <p>{{ job.company_name }}</p>
         </div>
@@ -50,7 +50,7 @@ export default {
 <style scoped>
 .over {
   box-sizing: border-box;
-  /* display: grid; */
+  display: grid; 
   grid-template-columns: auto auto auto;
   border: none;
   height: 500px;
@@ -63,10 +63,9 @@ h1 {
 }
 .job {
   border: none;
-  /* width: 200px; */
-  height: 70px;
+  height: 80px;
   font-family: monospace;
-  font-size: 15px;
+  font-size: 40px;
   margin: 0 0 20px 0;
   padding: 0;
 }
@@ -109,6 +108,8 @@ h1 {
 .dev,
 .descrip2 {
   font-family: monospace;
+  border: none;
+  margin-bottom: 70px;
 }
 .descrip-remote,
 .location,
@@ -117,6 +118,7 @@ h1 {
   font-size: 20px;
   color: rgb(194, 192, 192);
   height: 18px;
+  border: none;
 }
 .location {
   height: 40px;
@@ -129,27 +131,34 @@ h1 {
   font-weight: bold;
   font-size: 20px;
   word-spacing: -8px;
+  border: none;
 }
 .logo,
 .logo2,
 .logo3 {
-  height: 5px;
+  height: 50px;
   margin-top: 18px;
+  border: none;
 }
 .company_name,
 .company_name1,
 .company_name2 {
-  font-family: monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   word-spacing: -4px;
+  border: none;
+  height: 40px;
+}
+.descrip-apply{
+border: none;
+height: 45px;
+box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244);
 }
 button {
   width: 300px;
   height: 45px;
   background-color: rgb(13, 187, 7);
   border: none;
-  box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244);
-  margin-top: 90px;
 }
 button a{
   text-decoration: none;
