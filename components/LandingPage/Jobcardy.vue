@@ -21,7 +21,7 @@
           </p>
         </div>
         <div class="logo">
-          <img :src="job.company_logo" alt="company" />
+          <img :src="job.company_logo" alt="company" height="50px"/>
         </div>
         <div class="company_name">
           <p>{{ job.company_name }}</p>
@@ -113,10 +113,11 @@ h1 {
 .descrip-remote,
 .location,
 .descrip-remote2 {
-  font-family: monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   color: rgb(194, 192, 192);
   height: 18px;
+  margin-top: 90px;
 }
 .location {
   height: 40px;
@@ -130,27 +131,19 @@ h1 {
   font-size: 20px;
   word-spacing: -8px;
 }
-.logo,
-.logo2,
-.logo3 {
-  height: 5px;
-  margin-top: 18px;
-}
 .company_name,
 .company_name1,
 .company_name2 {
-  font-family: monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   word-spacing: -4px;
+  border: 2px solid blue;
 }
-button {
+.descrip-apply {
+  height:45px;
+}
+a{
   width: 300px;
   height: 45px;
-  font-family: monospace;
-  font-size: 15px;
-  color: white;
-  background-color: rgb(13, 187, 7);
-  border: none;
-  box-shadow: 1px 1.5px 2px 2px rgb(247, 244, 244);
 }
 </style>
