@@ -42,7 +42,7 @@
     .body{
         display: flex;
         justify-content: space-around;
-        position: relative;
+        /* position: relative; */
         align-items: center;
         flex-wrap: wrap;
         padding: 20px 170px 60px 170px;

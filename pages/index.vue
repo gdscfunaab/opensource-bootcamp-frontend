@@ -1,13 +1,15 @@
 <template>
   
 <div class="landing-page">
-  <LandingPageHeader/>
-  <LandingPageHero/>
-  <LandingPageSearch/>
-  <LandingPageJobcardy :jobs="jobs" :isLandingPage="true"/>
-  <LandingPageDetail1/>
+  <div><LandingPageHeader/>
+  <LandingPageHero/></div>
+  <div><LandingPageSearch/>
+  <div><LandingPageJobcardy :jobs="jobs" :isLandingPage="true"/></div></div><br>
+  <div style="margin-top: 2400px"><LandingPageDetail1/>
   <LandingPageDetails2 />
-  <LandingPageFooter/>
+  <LandingPageFooter/></div>
+  
+  
 </div>
 </template>
 
@@ -42,4 +44,6 @@ export default {
 </script>
 
 <style>
+
 </style>
+
