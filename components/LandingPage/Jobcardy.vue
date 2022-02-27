@@ -51,22 +51,22 @@ export default {
 .over {
   box-sizing: border-box;
   display: grid; 
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   border: none;
   height: 500px;
-  width: 100;
+  width: 85%;
 }
 h1 {
   font-family: monospace;
-  font-size: 30px;
-  padding: 30px 50px;
+  font-size: 20px;
+  border: none;
+  height: 50px;
+  width: 90px;
+  margin: 0;
+  padding: 0;
 }
 .job {
-  border: none;
-  height: 80px;
-  font-family: monospace;
-  font-size: 40px;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0;
 }
 .details-comp {
@@ -74,8 +74,9 @@ h1 {
   grid-template-columns: auto auto auto;
   border: none;
   height: 400px;
-  width: 72rem;
+  width: 65rem;
   margin-top: 100px;
+  margin-right: 100px;
 }
 .first-grid {
   display: grid;
@@ -103,6 +104,30 @@ h1 {
   height: 370px;
   padding: 10px;
   box-shadow: 1px 1.5px 2px 2px rgb(226, 225, 235);
+}
+@media screen and (max-width: 600px) {
+  .over {
+    height: 100vh;
+    width: 100vw;
+  }
+  .first-grid,.second-grid,.third-grid{
+    width: 300px;
+  }
+  .details-comp{
+    display: flex;
+    flex:wrap;
+    flex-direction: column;
+    width: 320px;
+    margin-right: 120px;
+  }
+  .job{
+    height: 40px;
+  }
+  .h1{
+    font-size: 20px;
+    height:20px;
+    width: 70px;
+  }
 }
 .descrip,
 .dev,
@@ -166,5 +191,8 @@ button a{
   font-family: monospace;
   font-size: 15px;
   padding: 100px;
+}
+button :hover{
+  opacity: 0.5;
 }
 </style>

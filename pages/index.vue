@@ -5,14 +5,45 @@
   <LandingPageHero/></div>
   <div><LandingPageSearch/>
   <div><LandingPageJobcardy :jobs="jobs" :isLandingPage="true"/></div></div><br>
-  <div style="margin-top: 2400px"><LandingPageDetail1/>
-  <LandingPageDetails2 />
-  <LandingPageFooter/></div>
-  
-  
+  <div class="adjust" style="margin-top: 2400px"><LandingPageDetail1/></div>
+  <div class="detail"><LandingPageDetails2 /></div>
+  <div class="foot"><LandingPageFooter/></div>
+  <button class="back-to-top-hidden">Back To Top</button>
+
 </div>
 </template>
-
+<style scoped>
+.landing-page{
+  width:100vw;
+}
+.back-to-top-hidden{
+  display: viisible;
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  z-index: 99;
+  border: none;
+  background-color: hotpink;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.back-to-top-hidden:hover{
+transform: translateY(-10);
+animation:bounce .2.5s infinite;
+}
+@media screen and (max-width:600px) {
+  .adjust {
+    margin-top: 5900px;
+  }  
+  .detail{
+    margin-top: 2600px;
+  }
+  .foot{
+    margin-top: 500px;
+  }
+}
+</style>
 
 <script>
 export default {
