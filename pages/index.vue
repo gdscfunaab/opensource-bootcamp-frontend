@@ -5,7 +5,7 @@
   <LandingPageHero/></div>
   <div><LandingPageSearch/>
   <div><LandingPageJobcardy :jobs="jobs" :isLandingPage="true"/></div></div><br>
-  <div class="adjust" style="margin-top: 2400px"><LandingPageDetail1/></div>
+  <div class="adjust"><LandingPageDetail1/></div>
   <div class="detail"><LandingPageDetails2 /></div>
   <div class="foot"><LandingPageFooter/></div>
   <button class="back-to-top-hidden">Back To Top</button>
@@ -34,14 +34,19 @@ animation:bounce .2.5s infinite;
 }
 @media screen and (max-width:600px) {
   .adjust {
-    margin-top: 5900px;
+    margin-top: 5800px;
   }  
   .detail{
-    margin-top: 2600px;
+    margin-top: 30px;
   }
   .foot{
     margin-top: 500px;
   }
+}
+@media screen and (min-width:600px) {
+ .adjust{
+   margin-top: 2400px;
+ } 
 }
 </style>
 
