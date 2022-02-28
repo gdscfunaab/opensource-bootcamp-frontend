@@ -34,7 +34,7 @@ animation:bounce .2.5s infinite;
 }
 @media screen and (max-width:600px) {
   .adjust {
-    margin-top: 5800px;
+    margin-top: 6000px;
   }  
   .detail{
     margin-top: 30px;
