@@ -80,18 +80,16 @@
         padding-top: 10px;
         font-size: 17px;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 600px) {
         .body{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            position: relative;
+            width: 80vw;
             gap: 30px;
             margin: 30px 10px;
             padding: 20px 15px;
-          
             box-sizing: border-box;
-        
         }
         .body3{
         background-color: #fff;
